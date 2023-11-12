@@ -1,1 +1,5 @@
 export * from './components/ButtonSave'
+export * from './components/ButtonSearch'
+export * from './components/ButtonTravel'
+export * from './components/CardFavoriteMaxSize'
+export * from './components/CardFavoriteNormalSize'

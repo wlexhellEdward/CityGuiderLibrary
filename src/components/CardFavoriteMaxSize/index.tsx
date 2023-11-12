@@ -9,7 +9,7 @@ import { ButtonSave } from '../ButtonSave';
 import { ButtonTravel } from '../ButtonTravel';
 
 
-const CardFavoriteMaxSize: React.FC<CardFavoritePropsMaxSize> = ({ favoriteItem, handleSetIsOpen }) => {
+const CardFavoriteMaxSize: React.FC<CardFavoritePropsMaxSize> = ({ favoriteItem, handleSetIsOpen, handleClickTravel, handleClickAddToFavorite }) => {
 
     const useCardFavoriteStyle = CardFavoriteStyle({ isOpen: true, url: favoriteItem.img, Pallete: pallete })
     return (
@@ -41,8 +41,8 @@ const CardFavoriteMaxSize: React.FC<CardFavoritePropsMaxSize> = ({ favoriteItem,
                     <Typography whiteSpace={'normal'} className={useCardFavoriteStyle.classes.description}>{favoriteItem.description.substring(0, 150) + '...'}</Typography>
                 </Container>
                 <CardActions className={useCardFavoriteStyle.classes.containerDownIcons}>
-                    <ButtonSave data-testid='delete-from-favorite' isLoading={false} handleClick={()=>{}} isFavorite={false} />
-                    <ButtonTravel handleClick={()=>{}} />
+                    <ButtonSave data-testid='delete-from-favorite' isLoading={false} handleClick={handleClickAddToFavorite} isFavorite={false} />
+                    <ButtonTravel handleClick={handleClickTravel} />
                     <img onClick={handleSetIsOpen} className={useCardFavoriteStyle.classes.imgArrowDown} src={arrowMore} />
                 </CardActions>
             </Card>

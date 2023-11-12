@@ -8,13 +8,10 @@ import CardFavoriteStyle from './styled.ts';
 import { CardFavoritePropsNormalSize } from './interfaces.ts';
 import { Places } from '../../consts/places.ts';
 
-const CardFavoriteNormalSize: React.FC<CardFavoritePropsNormalSize> = ({ favoriteItem, handleSetIsOpen }) => {
-
-    const handleAddToFavorite = () => {
-        console.log("Место добавленно")
-    }
+const CardFavoriteNormalSize: React.FC<CardFavoritePropsNormalSize> = ({ favoriteItem, handleSetIsOpen, handleAddToFavorite }) => {
 
     const useCardFavoriteStyle = CardFavoriteStyle({ isOpen: false, url: favoriteItem.img, Pallete: pallete })
+    
     return (
         <>
             <Card data-testid='card-normal-size' className={useCardFavoriteStyle.classes.cardFavorite}>
@@ -46,7 +43,7 @@ const CardFavoriteNormalSize: React.FC<CardFavoritePropsNormalSize> = ({ favorit
                 </Container>
                 <CardActions disableSpacing className={useCardFavoriteStyle.classes.containerDownIcons}>
                     <img data-testid='delete-from-favorite' src={FavoriteImg} onClick={handleAddToFavorite} className={useCardFavoriteStyle.classes.icon} />
-                    <img data-testid='card-favorite-button-show-more' onClick={handleSetIsOpen} className={useCardFavoriteStyle.classes.imgArrow} src={arrowMore}  />
+                    <img data-testid='card-favorite-button-show-more' onClick={handleSetIsOpen} className={useCardFavoriteStyle.classes.imgArrow} src={arrowMore} />
                 </CardActions>
             </Card>
 
