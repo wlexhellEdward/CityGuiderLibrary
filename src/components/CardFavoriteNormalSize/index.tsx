@@ -6,12 +6,12 @@ import arrowMore from '../../assets/img/cardFavoriteActions/arrowMore.svg'
 import FavoriteImg from '../../assets/img/cardFavoriteActions/inFavorite.svg'
 import { CardFavoritePropsNormalSize } from './interfaces.ts';
 import CardFavoriteStyle from './styled';
-import { Places } from 'src/consts/places';
+import { Places } from '../../consts/places';
 
 const CardFavoriteNormalSize: React.FC<CardFavoritePropsNormalSize> = ({ favoriteItem, handleSetIsOpen, handleAddToFavorite }) => {
 
     const useCardFavoriteStyle = CardFavoriteStyle({ isOpen: false, url: favoriteItem.img, Pallete: pallete })
-    
+
     return (
         <>
             <Card data-testid='card-normal-size' className={useCardFavoriteStyle.classes.cardFavorite}>
