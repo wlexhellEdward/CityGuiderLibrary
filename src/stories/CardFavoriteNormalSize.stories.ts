@@ -22,11 +22,7 @@ const meta = {
             description: 'callback to add in favorite',
             defaultValue: () => { }
         },
-        isOpen: {
-            type: 'boolean',
-            description: '',
-            defaultValue: false
-        }
+       
     },
 } satisfies Meta<typeof CardFavoriteNormalSize>;
 
@@ -47,7 +43,6 @@ export const Empty: Story = {
             title: "",
             description: ""
         },
-        isOpen: false,
         handleAddToFavorite: () => { },
         handleSetIsOpen: () => { }
     }
@@ -66,7 +61,6 @@ export const Filled: Story = {
             title: "Имя места",
             description: "Vitebsk, test street, 24"
         },
-        isOpen: true,
         handleAddToFavorite: () => { },
         handleSetIsOpen: () => { }
     }

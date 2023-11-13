@@ -1,3 +1,4 @@
+import React from "react"
 
 function SearchSelected(props: object) {
     return (

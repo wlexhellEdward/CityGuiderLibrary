@@ -10,11 +10,6 @@ const meta = {
     },
     tags: ['autodocs'],
     argTypes: {
-        prevIsSelected: {
-            type: 'boolean',
-            description: 'Boolean variable for displaying the selection',
-            defaultValue: false
-        },
         searchPlace: [
 
         ]
@@ -27,14 +22,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        prevIsSelected: false,
-        searchPlace: Places[0]
+        searchPlace: Places[0],
+        isSelected: false,
     }
 }
 export const Selected: Story = {
     args: {
-        prevIsSelected: true,
-        searchPlace: Places[0]
+        searchPlace: Places[0],
+        isSelected: true
     }
 }
 

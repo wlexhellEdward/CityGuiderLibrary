@@ -7,8 +7,9 @@ import Search from '../../svg/search/Search';
 import SearchSelected from '../../svg/search/SearchSelected'
 import Logo from '../../assets/img/drawer/Logo.svg';
 import AsideListItemsStyle from './styled';
+import { AsideListItemsProps } from './interfaces';
 
-export const AsideListItems = ({ currentStatus, handleSetCurrentStatus }) => {
+export const AsideListItems = ({ currentStatus, handleSetCurrentStatus }: AsideListItemsProps) => {
 
     const useAsideStyle = AsideListItemsStyle({ Pallete: pallete });
 

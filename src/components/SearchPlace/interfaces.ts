@@ -5,6 +5,6 @@ export interface SearchPlaceProps {
         img: string,
         title: string,
     }
+    isSelected: boolean,
     handleClickOnPlace: () => void,
-    prevIsSelected: boolean,
 }

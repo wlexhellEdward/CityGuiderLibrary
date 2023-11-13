@@ -4,9 +4,9 @@ import { Box, Card, CardActions, CardContent, Container, Typography, } from '@mu
 import { LIGHT_THEME_APP as pallete } from '../../consts/theme'
 import arrowMore from '../../assets/img/cardFavoriteActions/arrowMore.svg'
 import FavoriteImg from '../../assets/img/cardFavoriteActions/inFavorite.svg'
-import CardFavoriteStyle from './styled.ts';
 import { CardFavoritePropsNormalSize } from './interfaces.ts';
-import { Places } from '../../consts/places.ts';
+import CardFavoriteStyle from './styled';
+import { Places } from 'src/consts/places';
 
 const CardFavoriteNormalSize: React.FC<CardFavoritePropsNormalSize> = ({ favoriteItem, handleSetIsOpen, handleAddToFavorite }) => {
 

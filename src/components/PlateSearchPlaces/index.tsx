@@ -17,7 +17,7 @@ export const PlateSearchPlaces = ({ handleClickOnPlace }: PlateSearchPlacesProps
                 {Places.map((item) => {
                     return (
                         <>
-                            <SearchPlace handleClickOnPlace={handleClickOnPlace} searchPlace={item} prevIsSelected={true} />
+                            <SearchPlace handleClickOnPlace={handleClickOnPlace} searchPlace={item} isSelected={true} />
                         </>
                     )
                 })}

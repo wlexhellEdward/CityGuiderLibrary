@@ -1,4 +1,3 @@
-
 import { makeStyles } from 'tss-react/mui';
 import { ThemeApp } from '../../interfaces/IThemeApp';
 

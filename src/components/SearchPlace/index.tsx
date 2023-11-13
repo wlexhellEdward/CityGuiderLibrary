@@ -6,11 +6,11 @@ import { SearchPlaceProps } from './interfaces'
 import SearchPlaceStyle from './styled'
 
 
-const SearchPlace: React.FC<SearchPlaceProps> = ({ searchPlace, prevIsSelected, handleClickOnPlace }) => {
-    const [isSelected, setIsSelected] = useState<boolean>(prevIsSelected)
+const SearchPlace: React.FC<SearchPlaceProps> = ({ searchPlace, isSelected, handleClickOnPlace }) => {
+    const [isSelectedNew, setIsSelected] = useState<boolean>(isSelected)
     const handleClickPlace = () => {
         handleClickOnPlace()
-        setIsSelected(!isSelected)
+        setIsSelected(!isSelectedNew)
     }
     const useSearchPlaceStyle = SearchPlaceStyle({ Pallete: pallete })
     return (

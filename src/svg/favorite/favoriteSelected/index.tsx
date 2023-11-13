@@ -1,3 +1,4 @@
+import React from "react"
 function FavoriteSelected(props: object) {
     return (
         <svg

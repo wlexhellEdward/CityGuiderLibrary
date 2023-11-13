@@ -1,16 +1,21 @@
 {
-  "name": "city-guider-library",
+  "name": "city-guider-ui-library",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ui library of components City Guider",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-lib": "rollup -c"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@rollup/plugin-image": "^3.0.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
@@ -32,6 +37,14 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.4.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "tss-react": "^4.9.3",
     "typestyle-react": "^2.5.0"
   }

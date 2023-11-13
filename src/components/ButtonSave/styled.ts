@@ -3,7 +3,6 @@ import { darken } from '@mui/system';
 import { makeStyles } from 'tss-react/mui';
 import { ThemeApp } from '../../interfaces/IThemeApp';
 
-import '../../assets/fonts/stylesheet.css'
 
 const ButtonSaveStyle = makeStyles<ThemeApp>()(
     (theme, { Pallete }) => ({

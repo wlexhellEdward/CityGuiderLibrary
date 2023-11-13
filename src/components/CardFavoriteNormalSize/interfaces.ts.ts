@@ -12,5 +12,4 @@ export interface CardFavoritePropsNormalSize {
     },
     handleAddToFavorite: () => void,
     handleSetIsOpen: () => void,
-    isOpen: boolean
 }

@@ -27,11 +27,6 @@ const meta = {
             description: 'callback to make a route',
             defaultValue: () => { }
         },
-        isOpen: {
-            type: 'boolean',
-            description: '',
-            defaultValue: false
-        }
     },
 } satisfies Meta<typeof CardFavoriteMaxSize>;
 
@@ -54,7 +49,6 @@ export const Empty: Story = {
         },
         handleClickAddToFavorite: () => { },
         handleClickTravel: () => { },
-        isOpen: false,
         handleSetIsOpen: () => { }
     }
 }
@@ -74,7 +68,6 @@ export const Filled: Story = {
         },
         handleClickAddToFavorite: () => { },
         handleClickTravel: () => { },
-        isOpen: true,
         handleSetIsOpen: () => { }
     }
 }

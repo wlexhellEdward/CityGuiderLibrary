@@ -13,5 +13,4 @@ export interface CardFavoritePropsMaxSize {
     handleClickAddToFavorite: () => void,
     handleClickTravel: () => void,
     handleSetIsOpen: () => void,
-    isOpen: boolean
 }

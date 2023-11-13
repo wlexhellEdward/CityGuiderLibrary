@@ -9,10 +9,10 @@ const meta = {
     },
     tags: ['autodocs'],
     argTypes: {
-        handleClickOnPlace:{
-            type:'function',
-            description:'callback on click at the  place',
-            defaultValue:()=>{}
+        handleClickOnPlace: {
+            type: 'function',
+            description: 'callback on click at the  place',
+            defaultValue: () => { }
         }
     },
 } satisfies Meta<typeof PlateSearchPlaces>;
@@ -23,7 +23,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        handleClickOnPlace:()=>{}
+        handleClickOnPlace: () => { }
     }
 }
 

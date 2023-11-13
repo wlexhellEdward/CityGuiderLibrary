@@ -1,6 +1,5 @@
 import { makeStyles } from 'tss-react/mui';
 import { ThemeApp } from '../../interfaces/IThemeApp';
-import '../../assets/fonts/stylesheet.css'
 
 const ButtonTravelStyle = makeStyles<ThemeApp>()(
     (theme, { Pallete }) => ({
